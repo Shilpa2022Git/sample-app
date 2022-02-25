@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+#filterPara{
+  font-style: bold;
+}
+
+.stateless{
+  border: 1px #61dafb ;
+}
