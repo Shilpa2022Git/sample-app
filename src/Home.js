@@ -60,11 +60,13 @@ function Home(){
             <h1>Print from Stateless component </h1>
 
             <div className="stateless">
-                <BlogList blogs={blogs} title={"All Blogs"} />
+                {/* <BlogList blogs={blogs} title={"All blogs"} /> */}
+
+                <BlogList blogs={blogs} /> {/* this will take default value from defaultProps*/}
                 <p id="filterPara">Use of filter</p>
                 <BlogList blogs={blogs.filter((blog) => blog.author === 'Facebook')} title={"Facebook blogs"} />
+                <button type="button" onClick={deleteBlog.bind(blogs, e)} >DeleteBlog</button>
             </div>
-
         </div>
     );
 }

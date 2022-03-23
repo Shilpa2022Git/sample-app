@@ -1,6 +1,6 @@
 import React from 'react'
 import Home  from './Home'
-
+import Employee from './Employee'
 
 function App() {
   const title = 'Learning dynamic values';
@@ -12,6 +12,8 @@ function App() {
   //we can replace dynamic value in attribute also
   const link = 'http://www.google.com';
 
+  
+
   return (
     <div className='Appclass'>
       <p>{title}</p>
@@ -22,7 +24,10 @@ function App() {
 
       <a href={link}>Google link </a>
 
-      <Home />
+      {/* <Home /> */}
+
+      <Employee id="121" name='Shilpa' location='Pune' Salary="12345"></Employee>
+      
     </div>
   );
 }
